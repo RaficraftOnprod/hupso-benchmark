@@ -16,6 +16,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1>HUPSO</h1>
+        <h2>Test SCSS</h2>
+        <h2>Test Tailwind</h2>
+        <h2>Test Stitches</h2>
       </main>
     </>
   )
