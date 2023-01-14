@@ -23,7 +23,6 @@ export default function Button({
   outlined = false,
   size = 'sm',
   radius = undefined
-
 }: Props) {
   return (
     <Buttons

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { IconeDownArrow, IconeUser } from "../../../../assets/svg/icones"
 import Nav from "./style"
 
 const navigationData = [
@@ -40,15 +41,18 @@ const navigationData = [
     href: 'A-propos/',
     label: 'A propos'
   },
+  {
+    href: 'connexion/',
+    label: 'Se connecter',
+    icon: {
+      position: 'left',
+      svg: <IconeUser />,
+      class: 'icone_user'
+    }
+  },
 ]
 
-const triangle = {
-  width: 0,
-  height: 0,
-  borderWidth: "14px 6.5px 0 6.5px",
-  borderColor: "#FF0000 transparent transparent transparent",
-  borderStyle: "solid",
-}
+
 
 export default function Navigation() {
   return (
@@ -58,10 +62,14 @@ export default function Navigation() {
           navigationData.map((link, key) => {
             return (
               <li key={`navLink-${key}`}>
+                {
+                  link.hasOwnProperty('icon') && link.icon?.position === 'left'
+                  && <div className={link.icon.class}>{link.icon?.svg}</div>
+                }
                 <Link href={`${link.href}`}>
                   {link.label}
                 </Link>
-                {link.hasOwnProperty('submenu') && <span className="triangle" />}
+                {link.hasOwnProperty('submenu') && <IconeDownArrow className="arrow_down" />}
               </li>
             )
           })

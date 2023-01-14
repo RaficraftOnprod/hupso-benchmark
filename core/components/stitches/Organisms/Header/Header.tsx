@@ -17,18 +17,6 @@ export function Header() {
         alt="Hupso apprendre autrement"
       />
       <Navigation />
-      <div className="">
-        <div>
-          <IconeUser color="red" />
-          <Link href="/connexion">
-            Se Connecter
-          </Link>
-
-        </div>
-        <div>
-          <Link href="tel:+33 6 07 08 09 10">+33 6 07 08 09 10</Link>
-        </div>
-      </div>
       <Button size="xl" radius="xl" variant="primary" disabled>
         Nous contacter
       </Button>
