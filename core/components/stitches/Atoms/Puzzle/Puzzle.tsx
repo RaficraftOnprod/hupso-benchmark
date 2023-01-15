@@ -5,7 +5,7 @@ type Props = {
   height?: string,
   color?: string,
   radius?: string,
-  rotate: number,
+  rotate?: number,
   css?: any,
 }
 

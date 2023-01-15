@@ -113,7 +113,7 @@ export default function HomeStitches() {
             backgroundColor: '$violet500',
             height: '6rem',
             display: 'flex',
-            justifyContent: 'space-between',
+            justifyContent: 'flex-end',
           }}
         >
           <Puzzle width="270px" height="100%" color="$green300" radius="1rem" />
