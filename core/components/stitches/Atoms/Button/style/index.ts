@@ -12,6 +12,11 @@ export const Buttons = styled('button', {
       orange: {
         backgroundColor: '$orange500',
         color: 'white',
+        transition: 'ease .5s',
+        '&:hover': {
+          backgroundColor: '$orange100',
+          color: '$orange500',
+        },
       },
       violet: {
         backgroundColor: '$violet500',
@@ -53,6 +58,10 @@ export const Buttons = styled('button', {
       borderColor: '$violet500',
       backgroundColor: 'white',
       color: '$violet500',
+      '&:hover': {
+        backgroundColor: '$violet500',
+        color: 'white',
+      },
     },
   },
   {
@@ -62,6 +71,10 @@ export const Buttons = styled('button', {
       borderColor: '$orange500',
       backgroundColor: 'white',
       color: '$orange500',
+      '&:hover': {
+        backgroundColor: '$orange500',
+        color: 'white',
+      },
     },
   }],
 });

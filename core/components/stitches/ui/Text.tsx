@@ -10,7 +10,6 @@ type Props = {
   color?: string,
   children: JSX.Element | JSX.Element[] | string,
   size?: 1 | 2 | 3 | 4 | 5 | 6 | undefined
-
 }
 
 export default function Text({
