@@ -11,4 +11,14 @@ export const { styled } = createStitches({
       green500: '#51b27e',
     },
   },
+  utils: {
+    marginX: (value: string) => ({
+      marginLeft: value,
+      marginRight: value,
+    }),
+    marginY: (value: string) => ({
+      marginTop: value,
+      marginBottom: value,
+    }),
+  },
 });

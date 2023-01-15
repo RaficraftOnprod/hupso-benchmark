@@ -12,22 +12,5 @@ export const HeroBanners = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     gap: '2.5rem',
-    '.text': {
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '1.5rem',
-    },
-    h1: {
-      maxWidth: '93%',
-    },
-    p: {
-      maxWidth: '53%',
-      color: 'gray',
-    },
-    '.button_group': {
-      display: 'flex',
-      gap: '2rem',
-    },
-
   },
 });
