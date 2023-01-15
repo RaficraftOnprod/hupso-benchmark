@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Button from '@stitchesUI/Atoms/Button/Button';
-import Navigation from '@stitchesUI/Atoms/Navigation/Navigation';
+import Navigation from '@core/components/stitches/Molecules/Navigation/Navigation';
 import Divider from '@stitchesUI/ui/Divider';
 
 import HeaderTop from './style';

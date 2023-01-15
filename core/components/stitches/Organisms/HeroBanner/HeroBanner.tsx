@@ -13,7 +13,7 @@ export function HeroBanner() {
           <Text tag="h1" size={6} css={{ maxWidth: '83%' }}>
             On ne naît pas utile, on l'apprend
           </Text>
-          <Text color="gray" css={{ maxWidth: '53%' }}>
+          <Text color="gray" lineHeight={1.5} css={{ maxWidth: '53%' }}>
             Hupso vous forme aux métiers de demain. Nous
             revalorisons les métiers indispensables grâce à la formation professionelle.
           </Text>

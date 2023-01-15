@@ -1,19 +1,29 @@
 import Button from '@core/components/stitches/Atoms/Button/Button';
 import MainContainer from '@core/components/stitches/Atoms/MainContainer/MainContainer';
+import Puzzle from '@core/components/stitches/Atoms/Puzzle/Puzzle';
 import { Header } from '@core/components/stitches/Organisms/Header/Header';
 import { HeroBanner } from '@core/components/stitches/Organisms/HeroBanner/HeroBanner';
+import Custom from '@core/components/stitches/ui/Custom';
 import FlexGroup from '@core/components/stitches/ui/FlexGroup';
 import Text from '@core/components/stitches/ui/Text';
 
 export default function HomeStitches() {
   return (
     <>
+      {/* Header */}
+
       <MainContainer>
         <Header />
       </MainContainer>
+
+      {/* Hero Banner */}
+
       <MainContainer>
         <HeroBanner />
       </MainContainer>
+
+      {/* Second Section Hupso Story */}
+
       <MainContainer color="$violet500">
         <FlexGroup
           justifyContent="center"
@@ -33,7 +43,6 @@ export default function HomeStitches() {
               flex: '1',
               height: '100%',
               alignSelf: 'flex-start',
-
             }}
           >
             <Text
@@ -92,6 +101,28 @@ export default function HomeStitches() {
           </FlexGroup>
         </FlexGroup>
       </MainContainer>
+
+      {/* Puzzle Green */}
+
+      <MainContainer color="$violet500" css={{ position: 'relative', width: '100%', height: '6rem' }}>
+        <Custom
+          tag="div"
+          css={{
+            position: 'relative',
+            content: ' ',
+            backgroundColor: '$violet500',
+            height: '6rem',
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+        >
+          <Puzzle width="270px" height="100%" color="$green300" radius="1rem" />
+        </Custom>
+      </MainContainer>
+
+      {/* Statistique */}
+
+      <MainContainer color="$green300" css={{ position: 'relative', width: '100%', height: '12rem' }} />
     </>
   );
 }

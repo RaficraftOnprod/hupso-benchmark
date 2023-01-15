@@ -7,6 +7,7 @@ export default styled('nav', {
     alignItems: 'center',
     gap: '30px',
     maxHeight: '30px',
+    height: '30px',
   },
   li: {
     listStyle: 'none',

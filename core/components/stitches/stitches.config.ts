@@ -20,6 +20,19 @@ export const {
 
       green100: '#ebfedf',
       green200: '#cdfcc3',
+      green300: '#affbb2',
+      green500: '#51b27e',
+    },
+    shadows: {
+      orange100: '#f6ebe5',
+      orange500: '#ff5000',
+
+      violet100: '#e7e9fb',
+      violet500: '#5a59f6',
+
+      green100: '#ebfedf',
+      green200: '#cdfcc3',
+      green300: '#affbb2',
       green500: '#51b27e',
     },
   },

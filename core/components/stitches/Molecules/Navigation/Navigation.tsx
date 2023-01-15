@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import Nav from './style';
-import Avatar from '../Avatar/Avatar';
+import Avatar from '../../Atoms/Avatar/Avatar';
 
 const navigationData = [
   {

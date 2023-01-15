@@ -1,12 +1,18 @@
 import { styled } from '@stitchesUI/stitches.config';
 
 type Props = {
+  width?: string,
   color?: string,
-  children: JSX.Element | JSX.Element[],
+  children?: JSX.Element | null,
   css?: any,
 }
 
-export default function MainContainer({ color, children, css }: Props) {
+export default function MainContainer({
+  width = '1440px',
+  color,
+  children,
+  css,
+}: Props) {
   const MainSection = styled('section', {
     display: 'flex',
     justifyContent: 'center',
@@ -16,7 +22,7 @@ export default function MainContainer({ color, children, css }: Props) {
     '>:nth-child(1)': {
       paddingLeft: '120px',
       paddingRight: '120px',
-      maxWidth: '1440px',
+      maxWidth: width,
       width: '100%',
     },
     ...css,
