@@ -1,32 +1,32 @@
-import { styled } from "../../../stitches.config";
+import { styled } from '@stitchesUI/stitches.config';
 
 export default styled('nav', {
   display: 'flex',
-  'ul': {
+  ul: {
     display: 'flex',
     alignItems: 'center',
     gap: '30px',
-    maxHeight: '30px'
+    maxHeight: '30px',
   },
-  'li': {
+  li: {
     listStyle: 'none',
     display: 'flex',
-    justifyContent: "center",
+    justifyContent: 'center',
     alignItems: 'center',
     gap: '6px',
-    'a': {
+    a: {
       textDecoration: 'none',
       color: 'black',
-      fontSize: '12px'
+      fontSize: '12px',
     },
   },
   '.triangle': {
     width: 0,
     height: 0,
-    borderWidth: "9px 5px 0 5px",
-    borderColor: "$orange500 transparent transparent transparent",
-    borderStyle: "solid",
+    borderWidth: '9px 5px 0 5px',
+    borderColor: '$orange500 transparent transparent transparent',
+    borderStyle: 'solid',
     display: 'flex',
     alignItems: 'center',
-  }
-})
+  },
+});

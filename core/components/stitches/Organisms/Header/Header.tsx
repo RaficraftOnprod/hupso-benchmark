@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import Button from "../../Atoms/Button/Button";
-import Navigation from "../../Atoms/Navigation/Navigation";
-import Divider from "../../ui/Divider";
-import HeaderTop from "./style";
+import React from 'react';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import Button from '@stitchesUI/Atoms/Button/Button';
+import Navigation from '@stitchesUI/Atoms/Navigation/Navigation';
+import Divider from '@stitchesUI/ui/Divider';
+
+import HeaderTop from './style';
 
 export function Header() {
   return (
@@ -18,7 +21,7 @@ export function Header() {
       <div className="navigation">
         <Navigation />
         <Divider />
-        <Link href='tel: +33 6 06 06 06 06'>
+        <Link href="tel: +33 6 06 06 06 06">
           +33 06 06 06 06 06
         </Link>
         <Button size="xl" radius="xl" color="orange">
@@ -26,5 +29,5 @@ export function Header() {
         </Button>
       </div>
     </HeaderTop>
-  )
+  );
 }

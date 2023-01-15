@@ -1,5 +1,4 @@
-import Stitches from '@stitches/react/types/stitches'
-import { Buttons } from './style'
+import { Buttons } from './style';
 
 type Props = {
   children: JSX.Element | string,
@@ -9,19 +8,19 @@ type Props = {
   outlined?: boolean
   radius?: 'sm' | 'xl' | undefined
   size?: 'sm' | 'xl' | undefined,
-  type?: "button" | "submit" | "reset",
+  type?: 'button' | 'submit' | 'reset',
   color?: 'orange' | 'violet' | undefined
 }
 
 export default function Button({
   children,
   disabled = false,
-  onClick = () => { },
-  onKeyUp = () => { },
+  onClick = (e) => { console.warn(e); },
+  onKeyUp = (e) => { console.warn(e); },
   outlined = false,
   radius = undefined,
   size = 'sm',
-  type = "button",
+  type = 'button',
   color = undefined,
 }: Props) {
   return (
@@ -38,5 +37,5 @@ export default function Button({
     >
       {children}
     </Buttons>
-  )
+  );
 }

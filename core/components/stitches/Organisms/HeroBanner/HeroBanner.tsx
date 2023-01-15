@@ -1,7 +1,8 @@
+import { IconeStar, IconeStarTrustPilot } from '@core/assets/svg/icones';
+import Button from '@stitchesUI/Atoms/Button/Button';
+import { H1 } from '@stitchesUI/ui/Text';
+
 import { HeroBanners } from './style';
-import { IconeStar, IconeStarTrustPilot } from '../../../../assets/svg/icones';
-import Button from '../../Atoms/Button/Button';
-import { H1 } from '../../ui/Text';
 
 export function HeroBanner() {
   return (

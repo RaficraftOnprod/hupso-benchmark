@@ -1,30 +1,30 @@
-import { styled } from "../../../stitches.config";
+import { styled } from '@stitchesUI/stitches.config';
 
 export const Avatars = styled('div', {
   borderRadius: '999999px',
   backgroundColor: 'grey',
-  overflow: "hidden",
+  overflow: 'hidden',
   position: 'relative',
-  'svg': {
+  svg: {
     position: 'absolute',
     bottom: '0px',
     marginTop: '8px',
-    color: 'white'
+    color: 'white',
   },
   variants: {
     color: {
       orange: {
         backgroundColor: '$orange500',
-        'svg': {
-          color: '$orange100'
-        }
+        svg: {
+          color: '$orange100',
+        },
       },
       violet: {
         backgroundColor: '$violet500',
-        'svg': {
-          color: 'violet100'
-        }
-      }
+        svg: {
+          color: 'violet100',
+        },
+      },
     },
     size: {
       sm: {
@@ -32,34 +32,34 @@ export const Avatars = styled('div', {
         $$svgSize: '2rem',
         minWidth: '$$size',
         minHeight: '$$size',
-        'svg': {
+        svg: {
           width: '$$svgSize',
           height: '2rem',
           right: 'calc(($$size - $$svgSize) / 2)',
-        }
+        },
       },
       md: {
         $$size: '2rem',
         $$svgSize: '1.5rem',
         minWidth: '$$size',
         minHeight: '$$size',
-        'svg': {
+        svg: {
           width: '$$svgSize',
           height: '$$svgSize',
           right: 'calc(($$size - $$svgSize) / 2)',
-        }
+        },
       },
       xl: {
         $$size: '3rem',
         $$svgSize: '2rem',
         minWidth: '$$size',
         minHeight: '$$size',
-        'svg': {
+        svg: {
           width: '$$svgSize',
           height: '2rem',
           right: 'calc(($$size - $$svgSize) / 2)',
-        }
-      }
+        },
+      },
 
     },
     radius: {
@@ -70,5 +70,5 @@ export const Avatars = styled('div', {
         borderRadius: '999999px',
       },
     },
-  }
-})
+  },
+});

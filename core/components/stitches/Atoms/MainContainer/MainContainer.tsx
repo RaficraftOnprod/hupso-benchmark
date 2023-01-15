@@ -1,4 +1,4 @@
-import { MainSection } from "./style";
+import { MainSection } from './style';
 
 type Props = {
   children: JSX.Element,
@@ -9,5 +9,5 @@ export default function MainContainer({ children }: Props) {
     <MainSection>
       {children}
     </MainSection>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import { styled } from '../../../stitches.config';
+import { styled } from '@stitchesUI/stitches.config';
 
 export const HeroBanners = styled('div', {
   height: '752px',

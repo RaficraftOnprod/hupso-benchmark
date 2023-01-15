@@ -1,5 +1,4 @@
-import { styled } from "../../../stitches.config";
-
+import { styled } from '@stitchesUI/stitches.config';
 
 export const Buttons = styled('button', {
   // Mini reset
@@ -15,7 +14,7 @@ export const Buttons = styled('button', {
         color: 'white',
       },
       violet: {
-        backgroundColor: "$violet500",
+        backgroundColor: '$violet500',
         color: 'white',
       },
     },
@@ -23,12 +22,12 @@ export const Buttons = styled('button', {
       true: {
         backgroundColor: 'white',
         border: '1px solid',
-      }
+      },
     },
     disabled: {
       true: {
-        cursor: 'not-allowed'
-      }
+        cursor: 'not-allowed',
+      },
     },
     size: {
       sm: {
@@ -36,7 +35,7 @@ export const Buttons = styled('button', {
       },
       xl: {
         padding: '1.5rem 2.5rem',
-      }
+      },
     },
     radius: {
       sm: {
@@ -53,8 +52,8 @@ export const Buttons = styled('button', {
     css: {
       borderColor: '$violet500',
       backgroundColor: 'white',
-      color: '$violet500'
-    }
+      color: '$violet500',
+    },
   },
   {
     color: 'orange',
@@ -62,7 +61,7 @@ export const Buttons = styled('button', {
     css: {
       borderColor: '$orange500',
       backgroundColor: 'white',
-      color: '$orange500'
-    }
+      color: '$orange500',
+    },
   }],
-})
+});

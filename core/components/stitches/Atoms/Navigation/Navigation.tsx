@@ -1,6 +1,7 @@
-import Link from "next/link";
-import Avatar from "../Avatar/Avatar";
-import Nav from "./style";
+import Link from 'next/link';
+
+import Nav from './style';
+import Avatar from '../Avatar/Avatar';
 
 const navigationData = [
   {
@@ -8,25 +9,25 @@ const navigationData = [
     submenu: [
       {
         href: '',
-        label: 'Social'
+        label: 'Social',
       },
       {
         href: '',
-        label: 'Paramédical'
+        label: 'Paramédical',
       },
       {
         href: '',
-        label: 'Commerce'
+        label: 'Commerce',
       },
       {
         href: '',
-        label: 'Enseignement'
-      }
-    ]
+        label: 'Enseignement',
+      },
+    ],
   },
   {
     href: 'Entreprises/',
-    label: 'entrerpises'
+    label: 'entrerpises',
   },
   {
     label: 'Ressources',
@@ -34,12 +35,12 @@ const navigationData = [
       {
         href: '',
         label: '',
-      }
-    ]
+      },
+    ],
   },
   {
     href: 'a-propos/',
-    label: 'À propos'
+    label: 'À propos',
   },
   {
     href: 'connexion/',
@@ -47,35 +48,34 @@ const navigationData = [
     icon: {
       position: 'left',
       jsx: <Avatar color="orange" radius="xl" size="md" />,
-    }
+    },
   },
-]
+];
 
 export default function Navigation() {
   return (
     <Nav>
       <ul>
         {
-          navigationData.map((link, key) => {
-            return (
-              <li key={`navLink-${key}`}>
-                {
-                  link.hasOwnProperty('icon') && link.icon?.position === 'left'
-                  && link.icon?.jsx
-                }
-                <Link href={`${link.href}`}>
-                  {link.label}
-                </Link>
-                {
-                  link.hasOwnProperty('icon') && link.icon?.position === 'right'
-                  && link.icon?.jsx
-                }
-                {link.hasOwnProperty('submenu') && <span className="triangle" />}
-              </li>
-            )
-          })
+          navigationData.map((link, key) => (
+
+            <li key={`navLink-${key}`}>
+              {
+                link.icon && link.icon?.position === 'left'
+                && link.icon?.jsx
+              }
+              <Link href={`${link.href}`}>
+                {link.label}
+              </Link>
+              {
+                link.icon && link.icon?.position === 'right'
+                && link.icon?.jsx
+              }
+              {link.submenu && <span className="triangle" />}
+            </li>
+          ))
         }
       </ul>
     </Nav>
-  )
+  );
 }

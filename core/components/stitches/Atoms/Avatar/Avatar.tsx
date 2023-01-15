@@ -1,6 +1,6 @@
-import { IconeUser } from '../../../../assets/svg/icones'
-import { Avatars } from './style'
+import { IconeUser } from '@core/assets/svg/icones';
 
+import { Avatars } from './style';
 
 type Props = {
   color?: 'orange' | 'violet' | undefined
@@ -21,5 +21,5 @@ export default function Button({
     >
       <IconeUser />
     </Avatars>
-  )
+  );
 }
