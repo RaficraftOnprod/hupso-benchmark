@@ -5,6 +5,7 @@ import { styled } from '@stitchesUI/stitches.config';
 type Props = {
   fontSize?: string,
   lineHeight?: number,
+  fontWeight?: number,
   tag?: ComponentType | keyof JSX.IntrinsicElements
   css?: any,
   color?: string,
@@ -14,15 +15,19 @@ type Props = {
 
 export default function Text({
   fontSize = '1rem',
+  fontWeight = 500,
   color = 'black',
   tag = 'p',
   css = {},
   children,
   size = undefined,
+  lineHeight = 1,
 }: Props) {
   const Typo = styled(tag, {
-    fontSize,
     color,
+    fontSize,
+    fontWeight,
+    lineHeight,
     ...css,
     variants: {
       size: {

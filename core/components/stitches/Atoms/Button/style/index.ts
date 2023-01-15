@@ -3,10 +3,10 @@ import { styled } from '@stitchesUI/stitches.config';
 export const Buttons = styled('button', {
   // Mini reset
   appearance: 'none',
-  border: 'none',
 
   fontWeight: 'bold',
   cursor: 'pointer',
+  border: '1px solid transparent',
   variants: {
     color: {
       orange: {
@@ -14,13 +14,28 @@ export const Buttons = styled('button', {
         color: 'white',
         transition: 'ease .5s',
         '&:hover': {
-          backgroundColor: '$orange100',
+          backgroundColor: 'white',
           color: '$orange500',
+          border: '1px solid',
         },
       },
       violet: {
         backgroundColor: '$violet500',
         color: 'white',
+        '&:hover': {
+          backgroundColor: 'white',
+          color: '$violet500',
+          border: '1px solid',
+        },
+      },
+      green: {
+        backgroundColor: '$green200',
+        color: '$violet500',
+        '&:hover': {
+          backgroundColor: 'white',
+          color: '$violet500',
+          border: '1px solid',
+        },
       },
     },
     outlined: {
@@ -36,10 +51,10 @@ export const Buttons = styled('button', {
     },
     size: {
       sm: {
-        padding: '1rem 1rem',
+        padding: '.875rem .875rem',
       },
       xl: {
-        padding: '1.5rem 2.5rem',
+        padding: '1.375rem 2.375rem',
       },
     },
     radius: {

@@ -7,11 +7,13 @@ type Props = {
   css?: any,
   direction?: string,
   gap?: string,
+  justifyContent?: string,
 }
 
 export default function FlexGroup({
   gap = '0.5rem',
   direction = 'row',
+  justifyContent = 'flexStart',
   alignItems = 'center',
   backgroundColor = 'transparent',
   css = {},
@@ -20,6 +22,7 @@ export default function FlexGroup({
   const Group = styled('div', {
     display: 'flex',
     flexDirection: direction,
+    justifyContent,
     alignItems,
     gap,
     backgroundColor,

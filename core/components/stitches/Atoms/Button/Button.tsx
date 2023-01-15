@@ -9,7 +9,7 @@ type Props = {
   radius?: 'sm' | 'xl' | undefined
   size?: 'sm' | 'xl' | undefined,
   type?: 'button' | 'submit' | 'reset',
-  color?: 'orange' | 'violet' | undefined
+  color?: 'orange' | 'violet' | 'green' | undefined
 }
 
 export default function Button({
