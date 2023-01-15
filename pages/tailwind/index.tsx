@@ -1,4 +1,4 @@
-export function HomeTailwind() {
+export default function HomeTailwind() {
   return (
     <div>
       <h1>

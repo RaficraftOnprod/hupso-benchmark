@@ -1,4 +1,4 @@
-export function HomeScss() {
+export default function HomeScss() {
   return (
     <div>
       <h1>
