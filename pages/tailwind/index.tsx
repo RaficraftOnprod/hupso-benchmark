@@ -5,5 +5,5 @@ export function HomeTailwind() {
         HOME Tailwind
       </h1>
     </div>
-  )
+  );
 }

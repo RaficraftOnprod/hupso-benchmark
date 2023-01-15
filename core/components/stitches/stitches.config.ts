@@ -8,7 +8,7 @@ export const { styled } = createStitches({
       violet100: '#e7e9fb',
       violet500: '#5a59f6',
       green100: '#ebfedf',
-      green500: '#51b27e'
-    }
-  }
-})
+      green500: '#51b27e',
+    },
+  },
+});

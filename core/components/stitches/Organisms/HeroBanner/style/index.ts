@@ -1,5 +1,4 @@
-import { styled } from "../../../stitches.config";
-
+import { styled } from '../../../stitches.config';
 
 export const HeroBanners = styled('div', {
   height: '752px',
@@ -16,19 +15,19 @@ export const HeroBanners = styled('div', {
     '.text': {
       display: 'flex',
       flexDirection: 'column',
-      gap: '1.5rem'
+      gap: '1.5rem',
     },
-    'h1': {
+    h1: {
       maxWidth: '93%',
     },
-    'p': {
+    p: {
       maxWidth: '53%',
       color: 'gray',
     },
     '.button_group': {
       display: 'flex',
-      gap: '2rem'
-    }
+      gap: '2rem',
+    },
 
-  }
-})
+  },
+});

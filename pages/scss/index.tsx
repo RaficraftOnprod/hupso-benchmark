@@ -5,5 +5,5 @@ export function HomeScss() {
         HOME Tailwind
       </h1>
     </div>
-  )
+  );
 }
