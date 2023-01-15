@@ -1,3 +1,4 @@
+import { IconeStar, IconeStarTrustPilot } from "../../../../assets/svg/icones";
 import Button from "../../Atoms/Button/Button";
 import { H1 } from "../../ui/Text";
 import { HeroBanners } from "./style";
@@ -19,6 +20,17 @@ export function HeroBanner() {
           <Button color="orange" radius="xl" size="xl" outlined>
             Découvrir les secteurs
           </Button>
+        </div>
+        <div>
+          <div>
+            <IconeStarTrustPilot />
+            <IconeStarTrustPilot />
+            <IconeStarTrustPilot />
+            <IconeStarTrustPilot />
+            <IconeStarTrustPilot />
+          </div>
+          <IconeStar />
+          <p>Trustpilot</p>
         </div>
       </div>
     </HeroBanners>

@@ -1,16 +1,16 @@
 import { Header } from "../../core/components/stitches/Organisms/Header/Header";
 import { HeroBanner } from "../../core/components/stitches/Organisms/HeroBanner/HeroBanner";
-import { MainSection } from "../../core/components/stitches/Templates/MainContainer/style";
+import MainContainer from "../../core/components/stitches/Atoms/MainContainer/MainContainer";
 
 export default function HomeStitches() {
   return (
     <>
-      <MainSection>
+      <MainContainer>
         <Header />
-      </MainSection>
-      <MainSection>
+      </MainContainer>
+      <MainContainer>
         <HeroBanner />
-      </MainSection>
+      </MainContainer>
     </>
   )
 }

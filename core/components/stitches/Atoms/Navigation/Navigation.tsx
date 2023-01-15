@@ -38,7 +38,7 @@ const navigationData = [
     ]
   },
   {
-    href: 'A-propos/',
+    href: 'a-propos/',
     label: 'À propos'
   },
   {
