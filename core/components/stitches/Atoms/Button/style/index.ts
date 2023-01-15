@@ -6,18 +6,18 @@ export const Buttons = styled('button', {
   appearance: 'none',
   border: 'none',
 
-  
   fontWeight: 'bold',
+  cursor: 'pointer',
   variants: {
-    variant: {
-      primary: {
-        backgroundColor: "$primary",
+    color: {
+      orange: {
+        backgroundColor: '$orange500',
         color: 'white',
-      },   
+      },
       violet: {
-        backgroundColor: "$violet",
+        backgroundColor: "$violet500",
         color: 'white',
-      },         
+      },
     },
     outlined: {
       true: {
@@ -30,39 +30,39 @@ export const Buttons = styled('button', {
         cursor: 'not-allowed'
       }
     },
-    size: {      
+    size: {
       sm: {
         padding: '1rem 1rem',
       },
       xl: {
-        padding: '1.5rem 3rem',
+        padding: '1.5rem 2.5rem',
       }
     },
     radius: {
-      sm:{
+      sm: {
         borderRadius: '5px',
-    },
+      },
       xl: {
         borderRadius: '1.25rem',
       },
     },
   },
   compoundVariants: [{
-    variant: 'violet',
+    color: 'violet',
     outlined: true,
     css: {
-      borderColor: '$violet',
+      borderColor: '$violet500',
       backgroundColor: 'white',
-      color: '$violet'
+      color: '$violet500'
     }
   },
   {
-    variant: 'primary',
+    color: 'orange',
     outlined: true,
     css: {
-      borderColor: '$primary',
+      borderColor: '$orange500',
       backgroundColor: 'white',
-      color: '$primary'
+      color: '$orange500'
     }
   }],
 })

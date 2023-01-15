@@ -2,27 +2,27 @@ import Stitches from '@stitches/react/types/stitches'
 import { Buttons } from './style'
 
 type Props = {
-  variant?: 'primary' | 'violet' | undefined
-  size?: 'sm' | 'xl' | undefined,
-  disabled?: boolean,
   children: JSX.Element | string,
+  disabled?: boolean,
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
   onKeyUp?: (event: React.KeyboardEvent<HTMLButtonElement>) => void
-  type?: "button" | "submit" | "reset",
   outlined?: boolean
-  radius: 'sm' | 'xl' | undefined
+  radius?: 'sm' | 'xl' | undefined
+  size?: 'sm' | 'xl' | undefined,
+  type?: "button" | "submit" | "reset",
+  color?: 'orange' | 'violet' | undefined
 }
 
 export default function Button({
-  disabled = false,
   children,
+  disabled = false,
   onClick = () => { },
   onKeyUp = () => { },
-  type = "button",
-  variant = undefined,
   outlined = false,
+  radius = undefined,
   size = 'sm',
-  radius = undefined
+  type = "button",
+  color = undefined,
 }: Props) {
   return (
     <Buttons
@@ -31,7 +31,7 @@ export default function Button({
       disabled={disabled}
       onClick={disabled ? (event) => { event.preventDefault(); } : onClick}
       onKeyUp={disabled ? (event) => { event.preventDefault(); } : onKeyUp}
-      variant={variant}
+      color={color}
       outlined={outlined}
       size={size}
       radius={radius}

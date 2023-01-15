@@ -1,4 +1,5 @@
 import { Header } from "../../core/components/stitches/Organisms/Header/Header";
+import { HeroBanner } from "../../core/components/stitches/Organisms/HeroBanner/HeroBanner";
 import { MainSection } from "../../core/components/stitches/Templates/MainContainer/style";
 
 export default function HomeStitches() {
@@ -8,7 +9,7 @@ export default function HomeStitches() {
         <Header />
       </MainSection>
       <MainSection>
-        <h1>HERO BANNER</h1>
+        <HeroBanner />
       </MainSection>
     </>
   )

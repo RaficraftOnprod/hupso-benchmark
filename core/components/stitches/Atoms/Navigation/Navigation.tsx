@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { IconeDownArrow, IconeUser } from "../../../../assets/svg/icones"
-import Nav from "./style"
+import Link from "next/link";
+import Avatar from "../Avatar/Avatar";
+import Nav from "./style";
 
 const navigationData = [
   {
@@ -39,20 +39,17 @@ const navigationData = [
   },
   {
     href: 'A-propos/',
-    label: 'A propos'
+    label: 'À propos'
   },
   {
     href: 'connexion/',
     label: 'Se connecter',
     icon: {
       position: 'left',
-      svg: <IconeUser />,
-      class: 'icone_user'
+      jsx: <Avatar color="orange" radius="xl" size="md" />,
     }
   },
 ]
-
-
 
 export default function Navigation() {
   return (
@@ -64,12 +61,16 @@ export default function Navigation() {
               <li key={`navLink-${key}`}>
                 {
                   link.hasOwnProperty('icon') && link.icon?.position === 'left'
-                  && <div className={link.icon.class}>{link.icon?.svg}</div>
+                  && link.icon?.jsx
                 }
                 <Link href={`${link.href}`}>
                   {link.label}
                 </Link>
-                {link.hasOwnProperty('submenu') && <IconeDownArrow className="arrow_down" />}
+                {
+                  link.hasOwnProperty('icon') && link.icon?.position === 'right'
+                  && link.icon?.jsx
+                }
+                {link.hasOwnProperty('submenu') && <span className="triangle" />}
               </li>
             )
           })

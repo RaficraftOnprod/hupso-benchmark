@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { IconeUser } from "../../../../assets/svg/icones";
 import Button from "../../Atoms/Button/Button";
-import { Buttons } from "../../Atoms/Button/style";
 import Navigation from "../../Atoms/Navigation/Navigation";
+import Divider from "../../ui/Divider";
 import HeaderTop from "./style";
 
 export function Header() {
@@ -16,10 +15,16 @@ export function Header() {
         height={45}
         alt="Hupso apprendre autrement"
       />
-      <Navigation />
-      <Button size="xl" radius="xl" variant="primary" disabled>
-        Nous contacter
-      </Button>
+      <div className="navigation">
+        <Navigation />
+        <Divider />
+        <Link href='tel: +33 6 06 06 06 06'>
+          +33 06 06 06 06 06
+        </Link>
+        <Button size="xl" radius="xl" color="orange">
+          Nous contacter
+        </Button>
+      </div>
     </HeaderTop>
   )
 }
