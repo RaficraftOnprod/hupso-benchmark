@@ -1,4 +1,4 @@
-import { styled } from "@stitches/react"
+import { styled } from '@stitchesUI/stitches.config';
 
 export default styled('header', {
   display: 'flex',
@@ -11,8 +11,8 @@ export default styled('header', {
     alignItems: 'center',
     gap: '30px',
   },
-  'a': {
+  a: {
     fontSize: '12px',
-    fontWeight: '500'
-  }
-})
+    fontWeight: '500',
+  },
+});

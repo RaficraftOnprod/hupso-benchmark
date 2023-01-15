@@ -22,6 +22,7 @@ export const Buttons = styled('button', {
       violet: {
         backgroundColor: '$violet500',
         color: 'white',
+        transition: 'ease .5s',
         '&:hover': {
           backgroundColor: 'white',
           color: '$violet500',
@@ -31,8 +32,9 @@ export const Buttons = styled('button', {
       green: {
         backgroundColor: '$green200',
         color: '$violet500',
+        transition: 'ease .5s',
         '&:hover': {
-          backgroundColor: 'white',
+          backgroundColor: '$green500',
           color: '$violet500',
           border: '1px solid',
         },
