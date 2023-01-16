@@ -30,6 +30,7 @@ export const Avatars = styled('div', {
       sm: {
         $$size: '3rem',
         $$svgSize: '2rem',
+
         minWidth: '$$size',
         minHeight: '$$size',
         svg: {
@@ -41,6 +42,7 @@ export const Avatars = styled('div', {
       md: {
         $$size: '2rem',
         $$svgSize: '1.5rem',
+
         minWidth: '$$size',
         minHeight: '$$size',
         svg: {
@@ -52,6 +54,7 @@ export const Avatars = styled('div', {
       xl: {
         $$size: '3rem',
         $$svgSize: '2rem',
+
         minWidth: '$$size',
         minHeight: '$$size',
         svg: {

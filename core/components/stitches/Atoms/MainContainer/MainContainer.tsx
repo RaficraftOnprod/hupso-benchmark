@@ -1,9 +1,12 @@
+import { ComponentType } from 'react';
+
 import { styled } from '@stitchesUI/stitches.config';
 
 type Props = {
   width?: string,
   color?: string,
   children?: JSX.Element | null,
+  tag?: ComponentType | keyof JSX.IntrinsicElements
   css?: any,
 }
 
@@ -11,9 +14,10 @@ export default function MainContainer({
   width = '1440px',
   color,
   children,
+  tag = 'section',
   css,
 }: Props) {
-  const MainSection = styled('section', {
+  const MainSection = styled(tag, {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
