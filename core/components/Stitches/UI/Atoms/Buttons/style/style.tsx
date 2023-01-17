@@ -1,19 +1,12 @@
-import type * as Stitches from '@stitches/react';
-
 import { styled } from 'stitches.config';
 
 export const ButtonStyle = styled('button', {
+  // Mini reset
   appearance: 'none',
-  fontWeight: '500',
+
+  fontWeight: 'bold',
   cursor: 'pointer',
   border: '1px solid transparent',
-  transition: 'ease .5s',
-  '&:hover': {
-    backgroundColor: 'black',
-    color: 'white',
-    border: '1px solid',
-  },
-
   variants: {
     colors: {
       gray: {
@@ -25,66 +18,43 @@ export const ButtonStyle = styled('button', {
           color: 'black',
         },
       },
-
       orange: {
-        padding: '.875rem',
         backgroundColor: '$orange500',
         color: 'white',
+        transition: 'ease .5s',
         '&:hover': {
           backgroundColor: 'white',
           color: '$orange500',
           border: '1px solid',
         },
       },
-
       violet: {
-        padding: '.875rem',
         backgroundColor: '$violet500',
         color: 'white',
+        transition: 'ease .5s',
         '&:hover': {
           backgroundColor: 'white',
           color: '$violet500',
+          border: '1px solid',
         },
       },
-
       green: {
-        padding: '.875rem',
         backgroundColor: '$green200',
         color: '$violet500',
+        transition: 'ease .5s',
         '&:hover': {
           backgroundColor: '$green500',
           color: '$violet500',
           border: '1px solid',
         },
       },
-
-      alert: {
-        padding: '.875rem',
-        backgroundColor: '$alert500',
-        color: 'white',
-        '&:hover': {
-          backgroundColor: 'white',
-          color: '$alert500',
-          border: '1px solid',
-        },
-      },
     },
-
     outlined: {
       true: {
         backgroundColor: 'white',
         border: '1px solid',
       },
     },
-
-    disabled: {
-      true: {
-        cursor: 'not-allowed',
-        textDecorationLine: 'line-through',
-
-      },
-    },
-
     fullWidth: {
       true: {
         maxWidth: '100%',
@@ -100,7 +70,11 @@ export const ButtonStyle = styled('button', {
         borderRadius: '999999px',
       },
     },
-
+    disabled: {
+      true: {
+        cursor: 'not-allowed',
+      },
+    },
     padding: {
       sm: {
         padding: '.875rem .875rem',
@@ -109,75 +83,41 @@ export const ButtonStyle = styled('button', {
         padding: '1.375rem 2.375rem',
       },
     },
-
     radius: {
       sm: {
-        borderRadius: '$borderRadius$sm',
-      },
-      md: {
-        borderRadius: '$borderRadius$md',
+        borderRadius: '5px',
       },
       xl: {
-        borderRadius: '$borderRadius$xl',
+        borderRadius: '1.25rem',
       },
     },
   },
-  compoundVariants: [
-    {
-      colors: 'gray',
-      outlined: true,
-      css: {
-        borderColor: 'gainsboro',
-        backgroundColor: 'white',
-        color: 'black',
-        '&:hover': {
-          backgroundColor: 'black',
-          color: 'white',
-        },
+  compoundVariants: [{
+    colors: 'violet',
+    outlined: true,
+    css: {
+      borderColor: '$violet500',
+      backgroundColor: 'white',
+      color: '$violet500',
+      '&:hover': {
+        backgroundColor: '$violet500',
+        color: 'white',
       },
     },
-    {
-      colors: 'orange',
-      outlined: true,
-      css: {
-        borderColor: '$orange500',
-        backgroundColor: 'white',
-        color: '$orange500',
-        '&:hover': {
-          backgroundColor: '$orange500',
-          color: 'white',
-        },
-      },
-    },
-    {
-      colors: 'violet',
-      outlined: true,
-      css: {
-        borderColor: '$violet500',
-        backgroundColor: 'white',
-        color: '$violet500',
-        '&:hover': {
-          backgroundColor: '$violet500',
-          color: 'white',
-        },
-      },
-    },
-    {
-      colors: 'alert',
-      outlined: true,
-      css: {
-        borderColor: '$alert500',
-        backgroundColor: 'white',
-        color: '$alert500',
-        '&:hover': {
-          backgroundColor: '$alert500',
-          color: 'white',
-        },
-      },
-    }],
-  defaultVariants: {
-    colors: 'gray',
   },
+  {
+    colors: 'orange',
+    outlined: true,
+    css: {
+      borderColor: '$orange500',
+      backgroundColor: 'white',
+      color: '$orange500',
+      '&:hover': {
+        backgroundColor: '$orange500',
+        color: 'white',
+      },
+    },
+  }],
 });
 
 export const CircleButton = styled(ButtonStyle, {
