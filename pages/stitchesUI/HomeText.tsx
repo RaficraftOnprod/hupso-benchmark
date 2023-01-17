@@ -1,8 +1,9 @@
 import { styled } from '@stitches/react';
 
+import FlexGroup from '@core/components/Stitches/UI/Atoms/FlexGroup/FlexGroup';
 import MainContainer from '@core/components/Stitches/UI/Atoms/MainContainer/MainContainer';
 import {
-  H1, H2, H3, H4, Text,
+  H1, H2, H3, H4, Text, Href,
 } from '@core/components/Stitches/UI/Atoms/Text/Text';
 
 const Box = styled('div');
@@ -11,11 +12,24 @@ const Input = styled('input');
 
 const HomeText = () => (
   <Section css={{ padding: '0 0 6rem 0' }}>
-    <MainContainer css={{ backgroundColor: 'gray', margin: '0 0 3rem 0' }}>
-      <div>
-        <h1 style={{ textAlign: 'center', padding: '2rem 0' }}>UI KIT with Stitches</h1>
-        <section />
-      </div>
+    <MainContainer css={{ backgroundColor: 'gray', margin: '0 0 3rem 0', paddingY: '2rem' }}>
+      <FlexGroup direction="column" gap="1rem">
+        <div>
+          <H1 weight="700" css={{ textAlign: 'center' }}>UI KIT with Stitches</H1>
+          <section />
+        </div>
+        <FlexGroup gap="4rem">
+          <Href href="/stitches" weight="700">
+            Demo Hupso
+          </Href>
+          <Href href="/stitchesUI/HomeText" weight="700">
+            UI Text
+          </Href>
+          <Href href="/stitchesUI/HomeButton" weight="700">
+            UI Button
+          </Href>
+        </FlexGroup>
+      </FlexGroup>
     </MainContainer>
 
     <MainContainer css={{ margin: '0 0 4rem 0' }}>

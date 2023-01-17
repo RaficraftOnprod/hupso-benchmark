@@ -1,20 +1,35 @@
-import { Avatar } from '@nextui-org/react';
 import { styled } from '@stitches/react';
 
 import { IconeUser } from '@core/assets/svg/icones';
-import { Button, CircleButton, AvatarButton } from '@core/components/Stitches/UI/Atoms/Buttons/Button';
+import {
+  Button, CircleButton, AvatarButton,
+} from '@core/components/Stitches/UI/Atoms/Buttons/Button';
 import FlexGroup from '@core/components/Stitches/UI/Atoms/FlexGroup/FlexGroup';
 import MainContainer from '@core/components/Stitches/UI/Atoms/MainContainer/MainContainer';
+import { H1, Href } from '@core/components/Stitches/UI/Atoms/Text/Text';
 
 const Section = styled('section');
 
 const HomeButton = () => (
   <Section css={{ padding: '0 0 6rem 0' }}>
-    <MainContainer css={{ backgroundColor: 'gray', margin: '0 0 3rem 0' }}>
-      <div>
-        <h1 style={{ textAlign: 'center', padding: '2rem 0' }}>UI KIT with Stitches</h1>
-        <section />
-      </div>
+    <MainContainer css={{ backgroundColor: 'gray', margin: '0 0 3rem 0', paddingY: '2rem' }}>
+      <FlexGroup direction="column" gap="1rem">
+        <div>
+          <H1 weight="700" css={{ textAlign: 'center' }}>UI KIT with Stitches</H1>
+          <section />
+        </div>
+        <FlexGroup gap="4rem">
+          <Href href="/stitches" weight="700">
+            Demo Hupso
+          </Href>
+          <Href href="/stitchesUI/HomeText" weight="700">
+            UI Text
+          </Href>
+          <Href href="/stitchesUI/HomeButton" weight="700">
+            UI Button
+          </Href>
+        </FlexGroup>
+      </FlexGroup>
     </MainContainer>
 
     {/* Standart Button */}
@@ -108,6 +123,7 @@ const HomeButton = () => (
         <AvatarButton circle="md" color="orange">
           <IconeUser />
         </AvatarButton>
+
       </FlexGroup>
     </MainContainer>
   </Section>

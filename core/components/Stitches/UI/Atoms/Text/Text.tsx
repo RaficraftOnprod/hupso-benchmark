@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { styled } from 'stitches.config';
 
 export const Text = styled('p', {
@@ -159,3 +161,11 @@ export const H5 = styled('h5', Text);
 export const H6 = styled('h6', Text);
 export const Label = styled('label', Text);
 export const Blockquote = styled('label', Text);
+
+export const Href = styled(Link, Text, {
+  transition: 'color ease .3s',
+  '&:hover': {
+    textDecoration: 'underline',
+    color: 'white',
+  },
+});
