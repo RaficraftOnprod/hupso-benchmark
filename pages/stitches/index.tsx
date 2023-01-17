@@ -1,11 +1,11 @@
-import Button from '@core/components/stitches/Atoms/Button/Button';
-import MainContainer from '@core/components/stitches/Atoms/MainContainer/MainContainer';
-import Puzzle from '@core/components/stitches/Atoms/Puzzle/Puzzle';
-import { Header } from '@core/components/stitches/Organisms/Header/Header';
-import { HeroBanner } from '@core/components/stitches/Organisms/HeroBanner/HeroBanner';
-import Custom from '@core/components/stitches/ui/Custom';
-import FlexGroup from '@core/components/stitches/ui/FlexGroup';
-import Text from '@core/components/stitches/ui/Text';
+import Button from '@core/components/stitchesWebsite/Atoms/Button/Button';
+import MainContainer from '@core/components/stitchesWebsite/Atoms/MainContainer/MainContainer';
+import Puzzle from '@core/components/stitchesWebsite/Atoms/Puzzle/Puzzle';
+import { Header } from '@core/components/stitchesWebsite/Organisms/Header/Header';
+import { HeroBanner } from '@core/components/stitchesWebsite/Organisms/HeroBanner/HeroBanner';
+import Custom from '@core/components/stitchesWebsite/ui/Custom';
+import FlexGroup from '@core/components/stitchesWebsite/ui/FlexGroup';
+import Text from '@core/components/stitchesWebsite/ui/Text';
 
 export default function HomeStitches() {
   return (

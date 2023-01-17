@@ -18,24 +18,31 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./",
     "paths": {
       "react": [
         "./node_modules/@types/react"
       ],
       "@core/*": [
-        "./core/*"
+        "core/*"
       ],
       "@components/*": [
-        "./core/components/*"
+        "core/components/*"
       ],
       "@stitchesUI/*": [
-        "./core/components/stitches/*"
+        "core/components/stitchesWebsite/*"
+      ],
+      "@benchmark/*": [
+        "core/components/Stitches/*"
+      ],
+      "@tailwindUI/*": [
+        "core/components/tailwind/*"
       ],
       "@api/*": [
-        "./pages/api/*"
+        "pages/api/*"
       ],
       "@pages/*": [
-        "./pages/*"
+        "pages/*"
       ]
     },
   },

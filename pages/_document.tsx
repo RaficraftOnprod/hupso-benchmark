@@ -24,7 +24,9 @@ import NextDocument, {
   Html, Head, Main, NextScript,
 } from 'next/document';
 
-import { getCssText } from '../core/components/stitches/stitches.config';
+// Home Page demo
+// import { getCssText } from '../core/components/stitchesWebsite/stitches.config';
+import { getCssText } from 'stitches.config';
 
 export default class Document extends NextDocument {
   render() {
