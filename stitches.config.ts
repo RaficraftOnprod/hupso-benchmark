@@ -1,4 +1,8 @@
 import { createStitches } from '@stitches/react';
+import type * as Stitches from '@stitches/react';
+
+type SquareType = Stitches.PropertyValue<'maxWidth' | 'height'>
+type BcType = Stitches.PropertyValue<'backgroundColor'>
 
 export const {
   styled,
@@ -72,28 +76,15 @@ export const {
   },
 
   utils: {
-    marginX: (value: string) => ({
-      marginLeft: value,
-      marginRight: value,
+    bc: (value: BcType) => ({
+      backgroundColor: value,
     }),
-    marginY: (value: string) => ({
-      marginTop: value,
-      marginBottom: value,
-    }),
-    paddingX: (value: string) => ({
-      paddingLeft: value,
-      paddingRight: value,
-    }),
-    paddingY: (value: string) => ({
-      paddingTop: value,
-      paddingBottom: value,
-    }),
-    square: (value: string) => ({
+    square: (value: SquareType) => ({
       maxWidth: value,
       width: '100%',
       height: value,
     }),
-    circle: (value: string) => ({
+    circle: (value: SquareType) => ({
       square: value,
       borderRadius: '999999px',
     }),

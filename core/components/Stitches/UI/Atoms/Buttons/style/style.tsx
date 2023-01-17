@@ -1,8 +1,8 @@
 import type * as Stitches from '@stitches/react';
 
-import { styled, config } from 'stitches.config';
+import { styled } from 'stitches.config';
 
-export const Button = styled('button', {
+export const ButtonStyle = styled('button', {
   appearance: 'none',
   fontWeight: '500',
   cursor: 'pointer',
@@ -15,8 +15,7 @@ export const Button = styled('button', {
   },
 
   variants: {
-    color: {
-
+    colors: {
       gray: {
         padding: '.875rem',
         backgroundColor: 'gainsboro',
@@ -78,6 +77,14 @@ export const Button = styled('button', {
       },
     },
 
+    disabled: {
+      true: {
+        cursor: 'not-allowed',
+        textDecorationLine: 'line-through',
+
+      },
+    },
+
     fullWidth: {
       true: {
         maxWidth: '100%',
@@ -94,14 +101,7 @@ export const Button = styled('button', {
       },
     },
 
-    disabled: {
-      true: {
-        cursor: 'not-allowed',
-        textDecorationLine: 'line-through',
-      },
-    },
-
-    size: {
+    padding: {
       sm: {
         padding: '.875rem .875rem',
       },
@@ -124,7 +124,7 @@ export const Button = styled('button', {
   },
   compoundVariants: [
     {
-      color: 'gray',
+      colors: 'gray',
       outlined: true,
       css: {
         borderColor: 'gainsboro',
@@ -137,7 +137,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'orange',
+      colors: 'orange',
       outlined: true,
       css: {
         borderColor: '$orange500',
@@ -150,7 +150,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'violet',
+      colors: 'violet',
       outlined: true,
       css: {
         borderColor: '$violet500',
@@ -163,7 +163,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'alert',
+      colors: 'alert',
       outlined: true,
       css: {
         borderColor: '$alert500',
@@ -176,11 +176,11 @@ export const Button = styled('button', {
       },
     }],
   defaultVariants: {
-    color: 'gray',
+    colors: 'gray',
   },
 });
 
-export const CircleButton = styled(Button, {
+export const CircleButton = styled(ButtonStyle, {
   position: 'relative',
   overflow: 'hidden',
 
