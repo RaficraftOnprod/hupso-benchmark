@@ -12,7 +12,7 @@ const Input = styled('input');
 
 const HomeText = () => (
   <Section css={{ padding: '0 0 6rem 0' }}>
-    <MainContainer css={{ backgroundColor: 'gray', margin: '0 0 3rem 0', paddingY: '2rem' }}>
+    <MainContainer css={{ backgroundColor: 'gray', margin: '0 0 3rem 0', padding: '2rem 0' }}>
       <FlexGroup direction="column" gap="1rem">
         <div>
           <H1 weight="700" css={{ textAlign: 'center' }}>UI KIT with Stitches</H1>

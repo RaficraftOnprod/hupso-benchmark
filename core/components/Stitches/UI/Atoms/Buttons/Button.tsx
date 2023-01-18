@@ -1,9 +1,6 @@
 import { styled } from 'stitches.config';
 
 export const Button = styled('button', {
-  // Mini reset
-  appearance: 'none',
-
   fontWeight: '500',
   cursor: 'pointer',
   border: '1px solid transparent',
@@ -15,17 +12,7 @@ export const Button = styled('button', {
   },
 
   variants: {
-    color: {
-
-      gray: {
-        padding: '.875rem',
-        backgroundColor: 'gainsboro',
-        color: 'black',
-        '&:hover': {
-          backgroundColor: 'lightgray',
-          color: 'black',
-        },
-      },
+    colors: {
 
       orange: {
         padding: '.875rem',
@@ -69,6 +56,16 @@ export const Button = styled('button', {
           border: '1px solid',
         },
       },
+
+      gray: {
+        padding: '.875rem',
+        backgroundColor: 'gainsboro',
+        color: 'black',
+        '&:hover': {
+          backgroundColor: 'lightgray',
+          color: 'black',
+        },
+      },
     },
 
     outlined: {
@@ -88,7 +85,7 @@ export const Button = styled('button', {
       },
     },
 
-    pilled: {
+    pills: {
       true: {
         borderRadius: '999999px',
       },
@@ -96,8 +93,11 @@ export const Button = styled('button', {
 
     disabled: {
       true: {
+        backgroundColor: 'gainsboro',
+        border: '1px solid gray',
         cursor: 'not-allowed',
         textDecorationLine: 'line-through',
+        color: 'gray',
       },
     },
 
@@ -124,7 +124,7 @@ export const Button = styled('button', {
   },
   compoundVariants: [
     {
-      color: 'gray',
+      colors: 'gray',
       outlined: true,
       css: {
         borderColor: 'gainsboro',
@@ -137,7 +137,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'orange',
+      colors: 'orange',
       outlined: true,
       css: {
         borderColor: '$orange500',
@@ -150,7 +150,20 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'violet',
+      colors: 'green',
+      outlined: true,
+      css: {
+        borderColor: '$green500',
+        backgroundColor: 'white',
+        color: '$violet500',
+        '&:hover': {
+          backgroundColor: '$green200',
+          color: '$violet500',
+        },
+      },
+    },
+    {
+      colors: 'violet',
       outlined: true,
       css: {
         borderColor: '$violet500',
@@ -163,7 +176,7 @@ export const Button = styled('button', {
       },
     },
     {
-      color: 'alert',
+      colors: 'alert',
       outlined: true,
       css: {
         borderColor: '$alert500',
@@ -176,7 +189,7 @@ export const Button = styled('button', {
       },
     }],
   defaultVariants: {
-    color: 'gray',
+    colors: 'gray',
   },
 });
 
