@@ -59,7 +59,10 @@ const HomeButton = () => (
         >
           Full Width Button
         </Button>
-        <Button padding="xl" colors="orange" radius="sm" fullWidth>
+        <Button padding="xl" colors="orange" radius="sm" fullWidth pills>
+          Full Width Button
+        </Button>
+        <Button padding="xl" colors="alert" radius="sm" outlined fullWidth pills>
           Full Width Button
         </Button>
 
