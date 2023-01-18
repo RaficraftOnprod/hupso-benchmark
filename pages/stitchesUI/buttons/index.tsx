@@ -14,14 +14,14 @@ const HomeButton = () => (
     <MainContainer css={{ margin: '0 0 4rem 0' }}>
       <FlexGroup gap="1.5rem" css={{ justifyContent: 'space-between' }}>
 
-        {/* <Button outlined>Default</Button>
-        <Button disabled>Disabled</Button> */}
+        <Button outlined>Default</Button>
+        <Button disabled>Disabled</Button>
 
         <Button>Default</Button>
-        <Button colors="orange" radius="sm" outlined>Button</Button>
-        <Button colors="violet" radius="sm" pills>Button</Button>
-        <Button colors="alert" radius="sm" disabled>Button</Button>
-        <Button colors="green" radius="sm" fullWidth>Button</Button>
+        <Button colors="orange" radius="sm">Button</Button>
+        <Button colors="violet" radius="sm">Button</Button>
+        <Button colors="alert" radius="sm">Button</Button>
+        <Button colors="violet" radius="sm" outlined>Button</Button>
 
       </FlexGroup>
     </MainContainer>
