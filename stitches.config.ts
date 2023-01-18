@@ -34,6 +34,18 @@ export const {
       info500: '#33A7FF',
     },
 
+    fontSize: {
+      1: '11px',
+      2: '13px',
+      3: '14px',
+      4: '1rem',
+      5: '1.5rem',
+      6: '2rem',
+      7: '2.5em',
+      8: '3rem',
+      xl: '6rem',
+    },
+
     borderRadius: {
       sm: '5px',
       md: '.5rem',
@@ -67,7 +79,8 @@ export const {
       backgroundColor: value,
     }),
     square: (value: Square) => ({
-      Width: value,
+      maxWidth: value,
+      width: '100%',
       height: value,
     }),
     circle: (value: Square) => ({

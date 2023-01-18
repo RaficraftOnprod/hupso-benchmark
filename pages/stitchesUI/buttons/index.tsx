@@ -3,13 +3,11 @@ import { styled } from '@stitches/react';
 import Button from '@core/components/Stitches/UI/Atoms/Buttons/Button';
 import FlexGroup from '@core/components/Stitches/UI/Atoms/FlexGroup/FlexGroup';
 import MainContainer from '@core/components/Stitches/UI/Atoms/MainContainer/MainContainer';
-import { globalCss } from 'stitches.config';
 
 const Section = styled('section');
 
 const HomeButton = () => (
   <Section css={{ padding: '6rem 0 6rem 0' }}>
-    <h1>TOTO</h1>
 
     {/* Standart Button */}
 

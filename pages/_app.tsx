@@ -3,9 +3,8 @@ import { globalCss } from '@stitches/react';
 import type { AppProps } from 'next/app';
 
 const globalStyles = globalCss({
-  h1: {
-    fontSize: '8rem',
-  },
+  // add globlal styles
+  '@import': ['reset.css', 'custom2.css'],
 });
 
 globalStyles();
