@@ -59,6 +59,7 @@ export const ButtonStyle = styled('button', {
         '&:hover': {
           backgroundColor: 'lightgray',
           color: 'black',
+          border: '1px solid',
         },
       },
     },
@@ -105,6 +106,12 @@ export const ButtonStyle = styled('button', {
         cursor: 'not-allowed',
         textDecorationLine: 'line-through',
         color: 'gray',
+        transition: 'none',
+        '&:hover': {
+          backgroundColor: 'gainsboro',
+          color: 'gray',
+          border: '1px solid',
+        },
       },
     },
 
