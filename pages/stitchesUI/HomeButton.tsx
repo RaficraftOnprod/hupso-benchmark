@@ -61,7 +61,7 @@ const HomeButton = () => (
           fullWidth
           radius="sm"
           css={{
-            backgroundcolors: 'rgb(34 211 238)',
+            backgroundColor: 'rgb(34 211 238)',
             colors: 'white',
             transition: '1.5s',
             '&:hover': {
