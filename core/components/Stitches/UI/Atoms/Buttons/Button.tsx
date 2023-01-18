@@ -8,26 +8,25 @@ interface Props
   extends
   HTMLProps<HTMLButtonElement>,
   Stitches.VariantProps<typeof ButtonStyle> {
-  type?: 'button' | 'submit' | 'reset',
+  css?: Stitches.CSS,
   disabled?: boolean,
 }
 
 export default function Button({
   children,
-  onClick = (e) => { console.warn(e); },
-  onKeyUp = (e) => { console.warn(e); },
-  disabled,
-  outlined,
-  radius,
-  padding = 'sm',
-  type = 'button',
   colors,
+  css,
+  disabled,
   fullWidth,
-  pilled,
+  padding = 'sm',
+  pills,
+  radius,
+  onClick,
+  onKeyUp,
+  outlined,
 }: Props) {
   return (
     <ButtonStyle
-      type={type}
       onClick={disabled ? (event) => { event.preventDefault(); } : onClick}
       onKeyUp={disabled ? (event) => { event.preventDefault(); } : onKeyUp}
       colors={colors}
@@ -36,7 +35,8 @@ export default function Button({
       radius={radius}
       disabled={disabled}
       fullWidth={fullWidth}
-      pilled={pilled}
+      pills={pills}
+      css={css}
     >
       {children}
     </ButtonStyle>

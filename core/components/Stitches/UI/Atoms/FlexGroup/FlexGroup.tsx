@@ -1,4 +1,4 @@
-import type * as Stitches from '@stitches/react';
+import { ComponentType } from 'react';
 
 import { styled } from 'stitches.config';
 
@@ -11,6 +11,7 @@ type Props = {
   gap?: string,
   justifyContent?: string,
   customClass?: string | boolean
+  tag?: ComponentType | keyof JSX.IntrinsicElements
 }
 
 export default function FlexGroup({
@@ -22,8 +23,9 @@ export default function FlexGroup({
   css = {},
   children,
   customClass = false,
+  tag = 'div',
 }: Props) {
-  const Group = styled('div', {
+  const Group = styled(tag, {
     display: 'flex',
     flexDirection: direction,
     flexWrap: 'wrap',

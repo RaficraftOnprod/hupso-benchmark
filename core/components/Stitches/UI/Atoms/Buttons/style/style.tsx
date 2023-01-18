@@ -1,23 +1,17 @@
 import { styled } from 'stitches.config';
 
 export const ButtonStyle = styled('button', {
-  // Mini reset
-  appearance: 'none',
-
   fontWeight: 'bold',
   cursor: 'pointer',
   border: '1px solid transparent',
+  transition: 'ease .5s',
+  '&:hover': {
+    backgroundColor: 'black',
+    color: 'white',
+  },
+
   variants: {
     colors: {
-      gray: {
-        padding: '.875rem',
-        backgroundColor: 'gainsboro',
-        color: 'black',
-        '&:hover': {
-          backgroundColor: 'lightgray',
-          color: 'black',
-        },
-      },
       orange: {
         backgroundColor: '$orange500',
         color: 'white',
@@ -44,35 +38,28 @@ export const ButtonStyle = styled('button', {
         transition: 'ease .5s',
         '&:hover': {
           backgroundColor: '$green500',
-          color: '$violet500',
+          color: 'white',
           border: '1px solid',
         },
       },
-    },
-    outlined: {
-      true: {
-        backgroundColor: 'white',
-        border: '1px solid',
-      },
-    },
-    fullWidth: {
-      true: {
-        maxWidth: '100%',
-        width: '100%',
-        '@max_tablet': {
-          maxWidth: '50%',
+      alert: {
+        backgroundColor: '$alert500',
+        color: 'white',
+        transition: 'ease .5s',
+        '&:hover': {
+          backgroundColor: 'white',
+          color: '$alert500',
+          border: '1px solid',
         },
       },
-    },
-
-    pilled: {
-      true: {
-        borderRadius: '999999px',
-      },
-    },
-    disabled: {
-      true: {
-        cursor: 'not-allowed',
+      gray: {
+        padding: '.875rem',
+        backgroundColor: 'gainsboro',
+        color: 'black',
+        '&:hover': {
+          backgroundColor: 'lightgray',
+          color: 'black',
+        },
       },
     },
     padding: {
@@ -91,33 +78,93 @@ export const ButtonStyle = styled('button', {
         borderRadius: '1.25rem',
       },
     },
-  },
-  compoundVariants: [{
-    colors: 'violet',
-    outlined: true,
-    css: {
-      borderColor: '$violet500',
-      backgroundColor: 'white',
-      color: '$violet500',
-      '&:hover': {
-        backgroundColor: '$violet500',
-        color: 'white',
+    outlined: {
+      true: {
+        backgroundColor: 'white',
+        border: '1px solid',
       },
     },
-  },
-  {
-    colors: 'orange',
-    outlined: true,
-    css: {
-      borderColor: '$orange500',
-      backgroundColor: 'white',
-      color: '$orange500',
-      '&:hover': {
-        backgroundColor: '$orange500',
-        color: 'white',
+    fullWidth: {
+      true: {
+        maxWidth: '50%',
+        width: '100%',
+        '@sm': {
+          maxWidth: '100%',
+        },
       },
     },
-  }],
+    pills: {
+      true: {
+        borderRadius: '999999px',
+      },
+    },
+    disabled: {
+      true: {
+        backgroundColor: 'gainsboro',
+        border: '1px solid gray',
+        cursor: 'not-allowed',
+        textDecorationLine: 'line-through',
+        color: 'gray',
+      },
+    },
+
+  },
+  compoundVariants: [
+
+    {
+      colors: 'gray',
+      outlined: true,
+      css: {
+        borderColor: 'gainsboro',
+        backgroundColor: 'white',
+        color: 'black',
+        '&:hover': {
+          backgroundColor: 'black',
+          color: 'white',
+        },
+      },
+    },
+    {
+      colors: 'orange',
+      outlined: true,
+      css: {
+        borderColor: '$orange500',
+        backgroundColor: 'white',
+        color: '$orange500',
+        '&:hover': {
+          backgroundColor: '$orange500',
+          color: 'white',
+        },
+      },
+    },
+    {
+      colors: 'violet',
+      outlined: true,
+      css: {
+        borderColor: '$violet500',
+        backgroundColor: 'white',
+        color: '$violet500',
+        '&:hover': {
+          backgroundColor: '$violet500',
+          color: 'white',
+        },
+      },
+    },
+    {
+      colors: 'alert',
+      outlined: true,
+      css: {
+        borderColor: '$alert500',
+        backgroundColor: 'white',
+        color: '$alert500',
+        '&:hover': {
+          backgroundColor: '$alert500',
+          color: 'white',
+        },
+      },
+    },
+
+  ],
 });
 
 export const CircleButton = styled(ButtonStyle, {

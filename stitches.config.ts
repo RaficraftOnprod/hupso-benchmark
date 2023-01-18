@@ -1,8 +1,8 @@
 import { createStitches } from '@stitches/react';
 import type * as Stitches from '@stitches/react';
 
-type SquareType = Stitches.PropertyValue<'maxWidth' | 'height'>
-type BcType = Stitches.PropertyValue<'backgroundColor'>
+type Square = Stitches.PropertyValue<'maxWidth' | 'height'>
+type Bc = Stitches.PropertyValue<'backgroundColor'>
 
 export const {
   styled,
@@ -14,6 +14,7 @@ export const {
   createTheme,
   config,
 } = createStitches({
+  prefix: 'hupso',
   theme: {
     colors: {
       orange100: '#f6ebe5',
@@ -33,17 +34,6 @@ export const {
       info500: '#33A7FF',
     },
 
-    fontSize: {
-      1: '11px',
-      2: '13px',
-      3: '14px',
-      4: '1rem',
-      5: '1.5rem',
-      6: '2rem',
-      7: '2.5em',
-      8: '3rem',
-      xl: '6rem',
-    },
     borderRadius: {
       sm: '5px',
       md: '.5rem',
@@ -66,25 +56,21 @@ export const {
   },
 
   media: {
-    min_mobile: '(min-width: 640px)',
-    min_tablet: '(min-width: 780px)',
-    min_desktop: '(min-width: 1280px)',
-
-    max_mobile: '(max-width: 640px)',
-    max_tablet: '(max-width: 780px)',
-    max_desktop: '(max-width: 1280px)',
+    sm: '(min-width: 640px)',
+    md: '(min-width: 768px)',
+    lg: '(min-width: 1024px)',
+    xl: '(min-width: 1280px)',
   },
 
   utils: {
-    bc: (value: BcType) => ({
+    bc: (value: Bc) => ({
       backgroundColor: value,
     }),
-    square: (value: SquareType) => ({
-      maxWidth: value,
-      width: '100%',
+    square: (value: Square) => ({
+      Width: value,
       height: value,
     }),
-    circle: (value: SquareType) => ({
+    circle: (value: Square) => ({
       square: value,
       borderRadius: '999999px',
     }),
